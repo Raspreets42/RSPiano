@@ -1,38 +1,152 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+#heading{
+  font-size: 30px;
+  font-family: consolas;
+  font-style: italic;
+  background-color: black;
   color: white;
+  font-weight: bold;
+}
+#logo{
+  width: 50px;
+  height: 40px;
+  margin-right: 10px;
+}
+.cont{
+  margin-top: 60px;
+  margin-bottom: 65px;
+}
+.btnwhite {
+  width: 35px;
+  height: 222px;
+  margin: -1px;
+  background-image: linear-gradient(rgb(163, 162, 162), white);
+  border: 2px solid black;
+  display: table-cell;
+  vertical-align: top;
+  padding-top: 180px;
+}
+.btnwhite:active{
+  background: rgb(248, 216, 173);
+}
+.btnblack {
+  width: 32px;
+  height: 111px;
+  margin-top: -1px;
+  margin-left: -248px;
+  position: absolute;
+  z-index: 99;
+  border: 1px solid white;
+  background-image: radial-gradient(rgb(56, 56, 56),black);
+}
+.btnblack:active{
+  background-image: linear-gradient(rgb(102, 101, 101), black);
+}
+#btnb2{
+  margin-left: -183px;
+}
+#btnb3{
+  margin-left: -148px;
+}
+#btnb4{
+  margin-left: -113px;
+}
+#btnb5{
+  margin-left: -50px;
+}
+.innerimage{
+  width: 100px;
+  height: 100px;
+  margin: 20px 0px;
+}
+#chnging{
+  color: white;
+  font-weight: bold;
+  font-style: italic;
+  font-family: 'Courier New', Courier, monospace;
+}
+.bbttnn{
+  padding: 10px;
+  margin: 20px;
+  border: 2px solid black;
+  width: 80px;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@media (min-width:230px) and (max-width:359px) {
+  #heading{
+      font-size: 15px;
+  }    
+  .btnwhite{
+      width: 25px;
+      height: 120px;
+      display: table-cell;
+      vertical-align: top;
+      padding-top: 95px;
+      font-size: 10px;
   }
-  to {
-    transform: rotate(360deg);
+  .btnblack{
+      width: 22px;
+      height: 60px;
+      margin-left: -172px;
+  }
+  #btnb2{
+      margin-left: -127px;
+  }
+  #btnb3{
+      margin-left: -103px;
+  }
+  #btnb4{
+      margin-left: -79px;
+  }
+  #btnb5{
+      margin-left: -34px;
+  }
+}
+@media (min-width:360px) and (max-width:550px) {
+  #heading{
+      font-size: 22px;
+  }    
+}
+
+.about{
+  border: 2px solid black;
+  border-radius: 15px;
+  margin: 40px 50px 0px 50px;
+  padding: 5px 20px;
+}
+.crdspace{
+  display: flex;
+  justify-content: center;
+}
+.crd{
+  width: 18rem;
+}
+
+@media (min-width: 330px) and (max-width:440px) { 
+  .texted{
+    font-size: 14px;
+  }
+  .crd{
+    width: 12rem;
+  }
+  .crdhead{
+    font-size: 15px;
+  }
+  .crdli{
+    font-size: 15px;
+  }
+}
+
+@media (min-width: 250px) and (max-width:329px) { 
+  .texted{
+    font-size: 12px;
+  }
+  .crd{
+    width: 8rem;
+  }
+  .crdhead{
+    font-size: 10px;
+  }
+  .crdli{
+    font-size: 10px;
   }
 }
